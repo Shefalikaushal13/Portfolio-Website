@@ -3,76 +3,48 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-    const [menu, openMenu] = useState(false);
-    const [showMenu, setShowMenu] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
-        openMenu(!menu);
-        setShowMenu(!showMenu);
-    };
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-    return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
-        >
-            <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
-                <span className="text-xl font-bold tracking-wide">Shefali Kaushal</span>
-                <ul className={`${menu ? "block" : "hidden"}  
-        mx-24 py-2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opacity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-6`}>
-                    <a href="#About">
-                        <li className="text-md transition-all duration-300 p-1 md:p-0">
-                            About
-                        </li>
-                    </a>
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
+      <nav className="flex justify-between items-center text-white px-6 py-4 md:px-20 md:py-6 relative z-50">
+   
+        <span className="text-xl font-bold tracking-wide">Shefali Kaushal</span>
 
-                    <a href="#Education">
-                        <li className="text-md transition-all duration-300 p-1 md:p-0">
-                            Education
-                        </li>
-                    </a>
+        <ul className="hidden md:flex gap-8 font-semibold text-md">
+          <li><a href="#About" className="hover:opacity-80 transition-all">About</a></li>
+          <li><a href="#Education" className="hover:opacity-80 transition-all">Education</a></li>
+          <li><a href="#Projects" className="hover:opacity-80 transition-all">Projects</a></li>
+          <li><a href="#Experience" className="hover:opacity-80 transition-all">Experience</a></li>
+          <li><a href="#Certifications" className="hover:opacity-80 transition-all">Certifications & Awards</a></li>
+          <li><a href="#Contact" className="hover:opacity-80 transition-all">Contact</a></li>
+        </ul>
 
-                    <a href="#Projects">
-                        <li className="text-md transition-all duration-300 p-1 md:p-0">
-                            Projects
-                        </li>
-                    </a>
+        <div className="md:hidden z-50" onClick={toggleMenu}>
+          {menuOpen ? <RiCloseLine size={28} /> : <RiMenu2Line size={28} />}
+        </div>
 
-                    <a href="#Experience">
-                        <li className="text-md transition-all duration-300 p-1 md:p-0">
-                            Experience
-                        </li>
-                    </a>
-
-                    <a href="#Certifications">
-                        <li className="text-md transition-all duration-300 p-1 md:p-0">
-                            Certifications & Awards
-                        </li>
-                    </a>
-
-                    <a href="#Contact">
-                        <li className="text-md transition-all duration-300 p-1 md:p-0">
-                            Contact
-                        </li>
-                    </a>
-                </ul>
-                {showMenu ? (
-                    <RiMenu2Line
-                        size={30}
-                        className="md:hidden absolute right-10 top-6 transition-all duration-300"
-                        onClick={toggleMenu}
-                    />
-                ) : (
-                    <RiCloseLine
-                        size={30}
-                        className="md:hidden absolute right-10 top-6 transition-all duration-300"
-                        onClick={toggleMenu}
-                    />
-                )}
-            </nav>
-        </motion.div>
-    );
+        {menuOpen && (
+          <ul className="absolute top-full left-0 w-full bg-[#171d32] text-white px-10 py-6 rounded-b-xl shadow-md flex flex-col gap-4 text-center font-semibold md:hidden animate-fadeIn">
+            <li><a href="#About" onClick={toggleMenu}>About</a></li>
+            <li><a href="#Education" onClick={toggleMenu}>Education</a></li>
+            <li><a href="#Projects" onClick={toggleMenu}>Projects</a></li>
+            <li><a href="#Experience" onClick={toggleMenu}>Experience</a></li>
+            <li><a href="#Certifications" onClick={toggleMenu}>Certifications & Awards</a></li>
+            <li><a href="#Contact" onClick={toggleMenu}>Contact</a></li>
+          </ul>
+        )}
+      </nav>
+    </motion.div>
+  );
 };
 
 export default Navbar;
