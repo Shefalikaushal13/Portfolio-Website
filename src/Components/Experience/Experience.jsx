@@ -1,10 +1,5 @@
 import React from 'react';
 import ScrollAnimatedSection from '../../ScrollAnimator';
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaBootstrap, FaPython } from "react-icons/fa";
-import { SiJetpackcompose, SiKotlin, SiCplusplus } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { VscAzure } from "react-icons/vsc";
-import { FaWebflow } from "react-icons/fa6";
 import AnveshanLogo from "../../assets/anveshan.png";
 import RipenLogo from "../../assets/ripen.png";
 import DesignPlunge from "../../assets/DesignPlunge.jpg";
@@ -14,34 +9,6 @@ const Experience = () => {
     <ScrollAnimatedSection>
       <div id="Experience" className="pt-6 md:pt-12 px-6 md:px-24 w-full">
         <h1 className="text-2xl md:text-4xl text-white font-bold text-center">Experience</h1>
-
-        {/* Grid of Tech Icons */}
-        <div className="flex justify-center mt-8">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-4 gap-6 p-6 max-w-5xl">
-            {[
-              { icon: <SiCplusplus color="#0085D3" size={50} />, label: "C++" },
-              { icon: <FaPython color="#FFDF50" size={50} />, label: "Python" },
-              { icon: <FaHtml5 color="#E34F26" size={50} />, label: "HTML" },
-              { icon: <FaCss3 color="#1572b6" size={50} />, label: "CSS" },
-              { icon: <FaJs color="#F7DF1E" size={50} />, label: "JavaScript" },
-              { icon: <FaBootstrap color="#7A09F8" size={50} />, label: "BootStrap" },
-              { icon: <FaReact color="#06B6D4" size={50} />, label: "ReactJs" },
-              { icon: <RiTailwindCssFill color="#06B6D4" size={50} />, label: "Tailwind CSS" },
-              { icon: <FaFigma color="#A358FF" size={50} />, label: "Figma" },
-              { icon: <SiJetpackcompose color="#00C165" size={50} />, label: "Jetpack Compose" },
-              { icon: <SiKotlin color="#AF25EA" size={50} />, label: "Kotlin" },
-              { icon: <VscAzure color="#7CC5D5" size={50} />, label: "Microsoft Azure" },
-              { icon: <FaWebflow color="#2596be" size={50} />, label: "Webflow" },
-            ].map((tech, index) => (
-              <div key={index} className="group relative w-24 h-24 bg-zinc-950 rounded-2xl flex items-center justify-center overflow-hidden shadow-lg cursor-pointer transition-transform hover:scale-105 duration-300">
-                {tech.icon}
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-white text-sm font-semibold text-center">{tech.label}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Experience Cards Row */}
         <div className="flex flex-col gap-8 mt-12 w-full">

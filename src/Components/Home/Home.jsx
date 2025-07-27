@@ -18,7 +18,9 @@ const Home = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <div className="text-white flex flex-col md:flex-row w-full justify-between items-start p-4 md:p-20">
+      <div 
+      id="Home"
+      className="text-white flex flex-col md:flex-row w-full justify-between items-start p-4 md:p-20">
         <div className="md:pt-10 md:w-1/2">
           <h1 className="text-xl md:text-6xl font-bold leading-snug tracking-tight">
             <TextAnimator />
@@ -33,10 +35,10 @@ const Home = () => {
             Contact Me
           </button>
         </div>
-  <div className="w-full md:w-auto mt-8 md:mt-12 lg:mt-0 flex justify-center md:justify-end pr-0 lg:pr-12">
-  <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-60 md:h-60 lg:w-96 lg:h-96">
-    <img
-      src={avatarImage}
+        <div className="w-full md:w-auto mt-8 md:mt-12 lg:mt-0 flex justify-center md:justify-end pr-0 lg:pr-12">
+          <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-60 md:h-60 lg:w-96 lg:h-96">
+            <img
+              src={avatarImage}
       alt="Avatar"
       className="w-full h-full object-contain"
     />

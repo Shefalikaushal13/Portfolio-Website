@@ -10,6 +10,14 @@ const Certifications = () => {
         <div className="flex flex-wrap justify-center gap-14 mt-4">
 
           <CertificationCard
+            title="Postman API Fundamentals Student Expert"
+            description="Successfully completed a hands-on API certification where I learned the fundamentals of working with APIs using Postman — 
+            including making GET, POST, PATCH, and DELETE requests, handling parameters and headers, using API keys for authorization, 
+            and integrating APIs into real-world applications."
+            certLink="https://badgr.com/public/assertions/QLVp_crKR567On0Glw634g"
+          />
+
+          <CertificationCard
             title="Android App Development"
             description="Completed 8 weeks Android App Development training from Internshaala."
             certLink="https://drive.google.com/file/d/1F6Qw3mjKTt1t8HyvGSzaIN2O96MpHwe9/view?usp=sharing"
