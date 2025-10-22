@@ -17,9 +17,9 @@ const About = () => {
                                 <IoArrowForward size={30} className="mt-1" />
 
                                 <span className="w-96">
-                                    <h1 className="text-xl md:text-2xl font-semibold leading-normal">Frontend Developer</h1>
+                                    <h1 className="text-xl md:text-2xl font-semibold leading-normal">Web Developer</h1>
                                     <p className="text-sm md:text-md leading-normal mt-5">
-                                        I focus on creating dynamic and visually appealing web interfaces using ReactJS and Tailwind CSS and using various other UI libraries like ShadCn, Bootstrap, MUI etc. I enjoy working with APIs to build responsive, data-driven applications, ensuring that each project offers a seamless and interactive user experience. I'm passionate about continuously learning and applying the latest tools and techniques to bring ideas to life on the web.
+                                        I am a passionate Web Developer focused on building dynamic and visually engaging web applications using ReactJS, Next.js, and Tailwind CSS, along with UI libraries like ShadCN, Bootstrap, and MUI. I enjoy working with APIs, Firebase, and MongoDB to create responsive, data-driven solutions that deliver seamless and interactive user experiences. I am constantly learning and exploring new technologies to develop efficient, modern, and impactful web solutions.
                                     </p>
                                 </span>
                             </div>
@@ -32,7 +32,7 @@ const About = () => {
                                 <span className="w-96">
                                     <h1 className="text-xl md:text-2xl font-semibold leading-normal">Machie Learning Engineer</h1>
                                     <p className="text-sm md:text-md leading-normal mt-5">
-                                        As a machine learning student, my goal is to become proficient in a variety of ML techniques in order to address practical issues and provide unique solutions. Building intelligent systems that provide smooth and significant user experiences is my passion, and I am committed to investigating the newest tools, methods, and industry best practices.
+                                        As a Machine Learning enthusiast, my goal is to develop intelligent systems that learn from data and deliver meaningful, real-world impact. I enjoy exploring techniques in deep learning, predictive modeling, and data analysis to design solutions that enhance decision-making and efficiency. Passionate about innovation, I continuously expand my knowledge of emerging ML frameworks, optimization methods, and deployment practices to build reliable, scalable, and insightful AI-driven applications.
                                     </p>
                                 </span>
                             </div>

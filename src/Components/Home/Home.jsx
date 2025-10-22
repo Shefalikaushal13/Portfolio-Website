@@ -26,8 +26,8 @@ const Home = () => {
             <TextAnimator />
           </h1>
           <p className="text-xs md:text-2xl leading-tight tracking-tight pt-2 md:pt-14">
-            An aspiring software engineer, frontend developer, and a budding machine learning engineer with a knack for transforming creative ideas into engaging, responsive web experiences.<br />
-            Driven by curiosity and a love for problem-solving, I'm on a mission to build the future, one line of code at a time.
+           Aspiring Software Developer & ML Practitioner, transforming ideas into responsive, engaging web experiences.<br/>
+           Curious and inventive, blending creativity, code, and machine learning to make the web smarter and cooler.
           </p>
           <button
             className="mt-3 md:mt-10 text-white py-2 px-3 text-xs md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-1105 font-semibold rounded-3xl bg-[#465697]"

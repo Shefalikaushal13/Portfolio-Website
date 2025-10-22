@@ -5,6 +5,7 @@ import { SiCplusplus, SiTypescript, SiPostman, SiMongodb, SiFirebase, SiStreamli
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { VscAzure } from "react-icons/vsc";
 import { FaWebflow } from "react-icons/fa6";
+import bubbleLogo from "../../assets/bubble-io.svg"
 import ProjectCard from './ProjectCard';
 import WanderlyImg from "../../assets/wanderly.png"
 import DailyBuzzImg from "../../assets/dailybuzz.png";
@@ -43,7 +44,15 @@ const Projects = () => {
               { icon: <VscAzure color="#7CC5D5" size={50} />, label: "Microsoft Azure" },
               { icon: <FaFigma color="#A358FF" size={50} />, label: "Figma" },
               { icon: <FaWebflow color="#2596be" size={50} />, label: "Webflow" },
+              { 
+                icon:(
+                  <div className="bg-[#A7D8FF] p-3 rounded-2xl flex items-center justify-center w-[60px] h-[60px] overflow-hidden">
+                  <img src={bubbleLogo} alt="Bubble" className="object-contain w-[45px] h-[45px]" />
+                  </div>
+                ), 
+                label: "Bubble"  },
               { icon: <SiCanva color="#00C4CC" size={50} />, label: "Canva" },
+              
             ].map((tech, index) => (
               <div key={index} className="group relative w-24 h-24 bg-zinc-950 rounded-2xl flex items-center justify-center overflow-hidden shadow-lg cursor-pointer transition-transform hover:scale-105 duration-300">
                 {tech.icon}
