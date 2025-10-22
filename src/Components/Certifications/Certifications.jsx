@@ -41,6 +41,11 @@ const Certifications = () => {
         <h1 className="text-2xl md:text-4xl text-white font-bold text-center mt-10">Awards</h1>
         <div className="flex flex-wrap justify-center gap-14 mt-4">
           <CertificationCard
+            title="Flipkart GRiD 7.0"
+            description="Advanced to the Semi-Finalist stage in a national-level competition with 160,980+ participants, placing in the top 0.2% based on performance and problem-solving rounds."
+            certLink="https://drive.google.com/file/d/1W7r1n_7EhtWfSTL3I9tzCAmvw9xQbw9V/view"
+          />
+          <CertificationCard
             title="Best Presenter"
             description="Awarded with the solo award for being the Best Presenter at Castor 2023 Hackathon."
             certLink="https://drive.google.com/file/d/1jVxFGg222jzmWHzUN1iY2z-TR-OGxrfq/view"
