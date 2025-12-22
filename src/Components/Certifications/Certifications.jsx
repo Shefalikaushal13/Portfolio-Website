@@ -41,6 +41,10 @@ const Certifications = () => {
         <h1 className="text-2xl md:text-4xl text-white font-bold text-center mt-10">Awards</h1>
         <div className="flex flex-wrap justify-center gap-14 mt-4">
           <CertificationCard
+            title="Winner- Smart India Hackathon 2025"
+            description="Secured first place nationally among 1,70,000+ participants and 200 finalists, delivering an industry-ready automation solution for Kochi Metro Rail Limited."
+          />
+          <CertificationCard
             title="Flipkart GRiD 7.0"
             description="Advanced to the Semi-Finalist stage in a national-level competition with 160,980+ participants, placing in the top 0.2% based on performance and problem-solving rounds."
             certLink="https://drive.google.com/file/d/1W7r1n_7EhtWfSTL3I9tzCAmvw9xQbw9V/view"
