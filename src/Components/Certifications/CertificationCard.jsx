@@ -2,7 +2,7 @@ import React from 'react';
 
 const CertificationCard = ({ title, description, certLink }) => {
   return (
-    <div className="flex flex-col w-96 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl p-4 mt-6 min-h-[360px]">
+    <div className="flex flex-col w-96 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl p-4 min-h-[360px]">
       <div className="flex-1">
         <h3 className="text-xl md:text-2xl font-bold leading-normal mb-3">
           {title}

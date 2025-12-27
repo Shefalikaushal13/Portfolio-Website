@@ -11,7 +11,7 @@ const Experience = () => {
         <h1 className="text-2xl md:text-4xl text-white font-bold text-center">Experience</h1>
 
         {/* Experience Cards Row */}
-        <div className="flex flex-col gap-8 mt-12 w-full">
+        <div className="flex flex-col gap-8 mt-8 w-full">
 
 
             <div className="flex flex-col lg:flex-row gap-6 bg-slate-950 bg-opacity-45 rounded-lg p-4 items-center w-full">
