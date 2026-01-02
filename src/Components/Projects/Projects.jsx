@@ -17,6 +17,7 @@ import amex_churn_predictor from "../../assets/amex_churn_predictor.png"
 import rhythmIQ from "../../assets/rhythmIQ.png"
 import skimmr from "../../assets/Skimmr.png"
 import veridian from "../../assets/Veridian.png"
+import patram_infinity from "../../assets/Patram_infinity.png"
 
 const Projects = () => {
   return (
@@ -65,6 +66,17 @@ const Projects = () => {
         </div>
 
         <div className="py-1 px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-14 justify-items-center mt-4">
+
+          <ProjectCard
+            title="Patram ∞"
+            main="Patram ∞ is an AI-driven document automation platform built for Kochi Metro Rail that consolidates scattered documents
+            into a unified, searchable system. It integrates Gmail and Drive ingestion, Malayalam↔English translation, AI summarization, 
+            hybrid search, dashboards, automated routing, and inter-department communication to streamline workflows, improving information 
+            processing efficiency by up to 95%. The solution was recognized as the National Winner — Smart India Hackathon 2025."
+            bannerImage={patram_infinity}
+            demoLink="https://kmrlwebsite.vercel.app/"
+          />
+
           <ProjectCard
             title="Veridian"
             main="Veridian is an AI-powered resume analyzer and job match optimizer built with Streamlit and Google Gemini (LLM).
@@ -88,9 +100,9 @@ const Projects = () => {
           <ProjectCard
             title="RhythmIQ"
             main="Rhythmiq is a Flask-based music recommendation web app that revives the golden era of pre-2020 songs. 
-          Using machine learning and the K-Nearest Neighbors (KNN) algorithm, it analyzes audio features like danceability, energy, tempo, and 
-          more to suggest tracks that match your vibe. Built with Python, HTML, CSS, and a love for nostalgia. 
-          Perfect for rediscovering the soundtrack of your past!"
+            Using machine learning and the K-Nearest Neighbors (KNN) algorithm, it analyzes audio features like danceability, energy, tempo, and 
+            more to suggest tracks that match your vibe. Built with Python, HTML, CSS, and a love for nostalgia. 
+            Perfect for rediscovering the soundtrack of your past!"
             bannerImage={rhythmIQ}
             codeLink="https://github.com/Shefalikaushal13/RhythmIQ"
             demoLink="https://rhythmiq-9h5k.onrender.com/"
@@ -99,8 +111,8 @@ const Projects = () => {
           <ProjectCard
             title="AmEx Customer Churn Predictor"
             main="Developed a deep learning model using a 3-layer ANN to predict customer churn based on demographic and
-          transactional data, achieving 86% accuracy.Implemented One-Hot Encoding, feature scaling, and an 80-20 train-test split on a dataset of 9,500+ records,
-          optimizing model performance through batch normalization and ReLU activation functions."
+            transactional data, achieving 86% accuracy.Implemented One-Hot Encoding, feature scaling, and an 80-20 train-test split on a dataset of 9,500+ records,
+            optimizing model performance through batch normalization and ReLU activation functions."
             bannerImage={amex_churn_predictor}
             codeLink="https://github.com/Shefalikaushal13/AmEx-User-Exit-Prediction"
           />
@@ -145,7 +157,7 @@ const Projects = () => {
           <ProjectCard
             title="Cupid"
             main="Designed the UI/UX of an online movie streaming app using Figma, implemented glass morphism cards to display various movie categories,
-          made the design responsive and linked multiple frames together to create a user flow using Figma’s prototyping features."
+            made the design responsive and linked multiple frames together to create a user flow using Figma’s prototyping features."
             bannerImage={CupidImg}
             demoLink="https://shefalikaushal13.github.io/CUPID/"
           />
@@ -153,7 +165,7 @@ const Projects = () => {
           <ProjectCard
             title="FeedBo"
             main="FeedBo is an interactive and engaging Faculty Feedback BOT built using No-Code tools. Dealt with the analytical building of the interface on Visual Flow builder,integrated it with Google Sheets for database
-          management, and included various graphics like emojis, GIFs, and reactions to make the form more interesting."
+            management, and included various graphics like emojis, GIFs, and reactions to make the form more interesting."
             bannerImage={FeedBoImg}
             demoLink="https://www.canva.com/design/DAFY4ONToJY/Bgj93wi9SeP7biumMeR6jA/view"
           />
